@@ -1,6 +1,6 @@
 """
 The transparent, click-through desktop overlay that flies the sprite across
-the screen and (optionally) shows a speech-bubble reminder. No audio.
+the screen and (optionally) shows a speech-bubble reminder.
 """
 
 from __future__ import annotations

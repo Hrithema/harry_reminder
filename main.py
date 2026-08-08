@@ -1,4 +1,5 @@
 import argparse
+import random
 import sys
 
 from PySide6.QtWidgets import QApplication
@@ -12,8 +13,8 @@ def parse_args():
     parser.add_argument(
         "--message",
         "-m",
-        default=config.DEFAULT_MESSAGE,
-        help="Reminder text to show in the speech bubble.",
+        default=random.choice(config.DEFAULT_MESSAGE),
+        help="Reminder text to show in the speech bubble."
     )
     parser.add_argument(
         "--side",

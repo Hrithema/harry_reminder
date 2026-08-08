@@ -10,35 +10,40 @@ ASSETS_DIR = BASE_DIR / "assets"
 FRAMES_DIR = ASSETS_DIR / "frames"
 
 # --- Animation ---
-SPRITE_SIZE = (140, 140)          # width, height in px of each frame
-FRAME_FILENAMES = [                # sequential PNG frames, played in a loop
+SPRITE_SIZE = (140, 140)          
+FRAME_FILENAMES = [               
     "frame_1.png",
     "frame_2.png",
     "frame_3.png",
     "frame_4.png",
 ]
-FRAME_INTERVAL_MS = 90              # how fast frames cycle (flap speed)
+FRAME_INTERVAL_MS = 90            
 
-FLY_IN_DURATION_MS = 1400           # time to fly from edge to hover point
-HOVER_DURATION_MS = 3500            # time spent hovering while message shows
-FLY_OUT_DURATION_MS = 1200          # time to fly off screen
+FLY_IN_DURATION_MS = 1400         
+HOVER_DURATION_MS = 3500          
+FLY_OUT_DURATION_MS = 1200        
 
-# Vertical position of the hover point, as a fraction of screen height
+
 HOVER_Y_FRACTION = 0.75
 
-# Entry side: "left" or "right"
 ENTRY_SIDE = "left"
 
-# --- Speech bubble ---
 SHOW_SPEECH_BUBBLE = True
 BUBBLE_FONT_FAMILY = "Segoe UI"
 BUBBLE_FONT_SIZE = 13
 BUBBLE_MAX_WIDTH = 260
 BUBBLE_FADE_MS = 250
 
-# --- Window behavior ---
-CLICK_THROUGH = True               # let clicks pass through to desktop
+CLICK_THROUGH = True               
 ALWAYS_ON_TOP = True
 
-# --- Default reminder (used if none passed on the command line) ---
-DEFAULT_MESSAGE = "Hey! Drink some water."
+
+DEFAULT_MESSAGE = ["Hey, go drink some water!",
+                   "Your body is asking for hydration!",
+                   "Water break! Go grab a glass.",
+                   "Tiny reminder: hydrate yourself!",
+                   "Pause. Breathe. Drink some water.",
+                   "Your water is waiting for you!",
+                   "Hydration check! Have you had water?",
+                   "Drink water. Your future self will thank you.",
+                   "A little water break never hurt anyone!"]
