@@ -4,12 +4,6 @@ An animated Windows desktop reminder. A little sprite flies across the
 screen on a broomstick, hovers, shows a speech-bubble message, then flies
 off — no audio, no intrusive popup windows.
 
-> **A note on the art:** this ships with simple placeholder silhouette
-> sprites (`assets/frames/frame_1.png` … `frame_4.png`), not licensed
-> Harry Potter character art — that's copyrighted by Warner Bros. / J.K.
-> Rowling and can't be redistributed. Swap in your own hand-drawn or
-> properly licensed frames whenever you're ready; the app just plays
-> whatever PNG sequence is in that folder.
 
 ## Setup
 
@@ -24,12 +18,6 @@ If PowerShell blocks the activation script, run this once first:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-Regenerate placeholder art any time with:
-```powershell
-python generate_placeholder_sprites.py
-```
-(Skip this if you've already dropped in your own custom frames — it will
-overwrite them.)
 
 ## Run a reminder manually
 
@@ -145,10 +133,3 @@ harry_reminder/
 └── assets/frames/               # sprite PNG sequence (replace with your own art)
 ```
 
-## Ideas for later
-
-- Multiple reminder "characters" per situation (hydration vs. posture vs. breaks)
-- Randomized message variants so it doesn't feel repetitive
-- System tray icon for snooze/mute/quit controls
-- Weather/calendar-driven reminders
-- Per-reminder position/speed overrides via CLI flags
